@@ -38,6 +38,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Prettier check
+        run: npx prettier --check .
+
       - name: Copy .env.example to .env
         run: cp .env.example .env
 
@@ -53,12 +59,6 @@ jobs:
 
       - name: Seed the database
         run: npm run seed
-
-      - name: Run ESLint
-        run: npm run lint
-
-      - name: Run Prettier check
-        run: npx prettier --check .
 
       - name: Run unit tests
         run: npm run test:unit
