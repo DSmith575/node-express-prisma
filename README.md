@@ -55,6 +55,7 @@ A modern boilerplate for building scalable Node.js applications with Express, Pr
 `git add .`  
 `git commit -m "Init commit"`  
 `git remote add origin https://github.com/username/new-repo.git`  
+`git branch -M main`
 `git push -u origin main`  
 
 2. Install dependencies  
